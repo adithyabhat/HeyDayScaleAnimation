@@ -1,10 +1,15 @@
 //
 //  HomePageTableViewController.h
-//  HaydayAnimationTest
+//  HeydayScaleAnimation
 //
 //  Created by Adithya H Bhat on 02/06/14.
-//  Copyright (c) 2014 Robosoft Technologies. All rights reserved.
 //
+
+/*
+ This controller is resposible for implementing the pull to scale kind of animation.
+ This class is to be subclassed and the necessary table view delegate methods are 
+ to be implemented.
+ */
 
 #import <UIKit/UIKit.h>
 

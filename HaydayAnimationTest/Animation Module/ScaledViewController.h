@@ -1,10 +1,17 @@
 //
 //  ScalableViewController.h
-//  HaydayAnimationTest2
+//  HeydayScaleAnimation
 //
 //  Created by Adithya H Bhat on 02/06/14.
-//  Copyright (c) 2014 Robosoft Technologies. All rights reserved.
 //
+
+/*
+ This is the controller, whose view is scaled in the ScalableTopViewController. 
+ 
+ For every update of table views (in the ScalableTopViewController instance) scroll content offset Y,
+ updateViewFrameForScrollContentOffsetY method will be called. Perform the necessary view updates
+ based on the offset value.
+ */
 
 #import <UIKit/UIKit.h>
 

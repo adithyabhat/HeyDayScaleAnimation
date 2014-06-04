@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893C5AB4193F0CA4001D5308 /* ScalableTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893C5AB0193F0CA4001D5308 /* ScalableTopViewController.m */; };
+		893C5AB5193F0CA4001D5308 /* ScaledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 893C5AB2193F0CA4001D5308 /* ScaledViewController.m */; };
+		893C5AB6193F0CA4001D5308 /* ScaledViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893C5AB3193F0CA4001D5308 /* ScaledViewController.xib */; };
 		899F584E193C564800A2B9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584D193C564800A2B9DA /* Foundation.framework */; };
 		899F5850193C564800A2B9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584F193C564800A2B9DA /* CoreGraphics.framework */; };
 		899F5852193C564800A2B9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5851193C564800A2B9DA /* UIKit.framework */; };
@@ -17,16 +20,11 @@
 		899F5867193C564900A2B9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5866193C564900A2B9DA /* XCTest.framework */; };
 		899F5868193C564900A2B9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584D193C564800A2B9DA /* Foundation.framework */; };
 		899F5869193C564900A2B9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5851193C564800A2B9DA /* UIKit.framework */; };
-		899F5871193C564900A2B9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899F586F193C564900A2B9DA /* InfoPlist.strings */; };
-		899F5873193C564900A2B9DA /* HaydayAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */; };
-		899F587E193C683900A2B9DA /* ScalableTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F587D193C683900A2B9DA /* ScalableTopViewController.m */; };
 		899F5880193C686800A2B9DA /* sampleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 899F587F193C686800A2B9DA /* sampleImage.png */; };
 		899F5889193C6BF200A2B9DA /* OtherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */; };
 		899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */; };
 		899F588D193C7EF800A2B9DA /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F588C193C7EF800A2B9DA /* HomeTableViewController.m */; };
 		899F588F193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */; };
-		899F5895193CAF7700A2B9DA /* ScaledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5893193CAF7700A2B9DA /* ScaledViewController.m */; };
-		899F5896193CAF7700A2B9DA /* ScaledViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899F5894193CAF7700A2B9DA /* ScaledViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893C5AAF193F0CA4001D5308 /* ScalableTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalableTopViewController.h; sourceTree = "<group>"; };
+		893C5AB0193F0CA4001D5308 /* ScalableTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalableTopViewController.m; sourceTree = "<group>"; };
+		893C5AB1193F0CA4001D5308 /* ScaledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaledViewController.h; sourceTree = "<group>"; };
+		893C5AB2193F0CA4001D5308 /* ScaledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaledViewController.m; sourceTree = "<group>"; };
+		893C5AB3193F0CA4001D5308 /* ScaledViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaledViewController.xib; sourceTree = "<group>"; };
 		899F584A193C564800A2B9DA /* HeydayScaleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeydayScaleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899F584D193C564800A2B9DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		899F584F193C564800A2B9DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,11 +56,6 @@
 		899F585F193C564900A2B9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		899F5865193C564900A2B9DA /* HeydayScaleAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeydayScaleAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		899F5866193C564900A2B9DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		899F586E193C564900A2B9DA /* HeydayScaleAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeydayScaleAnimationTests-Info.plist"; sourceTree = "<group>"; };
-		899F5870193C564900A2B9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaydayAnimationTestTests.m; sourceTree = "<group>"; };
-		899F587C193C683900A2B9DA /* ScalableTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalableTopViewController.h; sourceTree = "<group>"; };
-		899F587D193C683900A2B9DA /* ScalableTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalableTopViewController.m; sourceTree = "<group>"; };
 		899F587F193C686800A2B9DA /* sampleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleImage.png; sourceTree = "<group>"; };
 		899F5886193C6BF200A2B9DA /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTableViewCell.h; sourceTree = "<group>"; };
 		899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherTableViewCell.m; sourceTree = "<group>"; };
@@ -65,9 +63,6 @@
 		899F588B193C7EF800A2B9DA /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		899F588C193C7EF800A2B9DA /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "samsung-galaxy-w-7-inch.jpg"; sourceTree = "<group>"; };
-		899F5892193CAF7700A2B9DA /* ScaledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaledViewController.h; sourceTree = "<group>"; };
-		899F5893193CAF7700A2B9DA /* ScaledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaledViewController.m; sourceTree = "<group>"; };
-		899F5894193CAF7700A2B9DA /* ScaledViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaledViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893C5AAE193F0CA4001D5308 /* Animation Module */ = {
+			isa = PBXGroup;
+			children = (
+				893C5AAF193F0CA4001D5308 /* ScalableTopViewController.h */,
+				893C5AB0193F0CA4001D5308 /* ScalableTopViewController.m */,
+				893C5AB1193F0CA4001D5308 /* ScaledViewController.h */,
+				893C5AB2193F0CA4001D5308 /* ScaledViewController.m */,
+				893C5AB3193F0CA4001D5308 /* ScaledViewController.xib */,
+			);
+			path = "Animation Module";
+			sourceTree = "<group>";
+		};
 		899F5841193C564800A2B9DA = {
 			isa = PBXGroup;
 			children = (
 				899F587F193C686800A2B9DA /* sampleImage.png */,
 				899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */,
 				899F5853193C564800A2B9DA /* HaydayAnimationTest */,
-				899F586C193C564900A2B9DA /* HaydayAnimationTestTests */,
 				899F584C193C564800A2B9DA /* Frameworks */,
 				899F584B193C564800A2B9DA /* Products */,
 			);
@@ -129,16 +135,12 @@
 		899F5853193C564800A2B9DA /* HaydayAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				893C5AAE193F0CA4001D5308 /* Animation Module */,
 				899F5886193C6BF200A2B9DA /* OtherTableViewCell.h */,
 				899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */,
 				899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */,
 				899F585C193C564800A2B9DA /* AppDelegate.h */,
 				899F585D193C564800A2B9DA /* AppDelegate.m */,
-				899F587C193C683900A2B9DA /* ScalableTopViewController.h */,
-				899F587D193C683900A2B9DA /* ScalableTopViewController.m */,
-				899F5892193CAF7700A2B9DA /* ScaledViewController.h */,
-				899F5893193CAF7700A2B9DA /* ScaledViewController.m */,
-				899F5894193CAF7700A2B9DA /* ScaledViewController.xib */,
 				899F588B193C7EF800A2B9DA /* HomeTableViewController.h */,
 				899F588C193C7EF800A2B9DA /* HomeTableViewController.m */,
 				899F585F193C564900A2B9DA /* Images.xcassets */,
@@ -154,24 +156,6 @@
 				899F5856193C564800A2B9DA /* InfoPlist.strings */,
 				899F5859193C564800A2B9DA /* main.m */,
 				899F585B193C564800A2B9DA /* HeydayScaleAnimation-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		899F586C193C564900A2B9DA /* HaydayAnimationTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */,
-				899F586D193C564900A2B9DA /* Supporting Files */,
-			);
-			path = HaydayAnimationTestTests;
-			sourceTree = "<group>";
-		};
-		899F586D193C564900A2B9DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				899F586E193C564900A2B9DA /* HeydayScaleAnimationTests-Info.plist */,
-				899F586F193C564900A2B9DA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,10 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893C5AB6193F0CA4001D5308 /* ScaledViewController.xib in Resources */,
 				899F5858193C564800A2B9DA /* InfoPlist.strings in Resources */,
 				899F5860193C564900A2B9DA /* Images.xcassets in Resources */,
 				899F5880193C686800A2B9DA /* sampleImage.png in Resources */,
-				899F5896193CAF7700A2B9DA /* ScaledViewController.xib in Resources */,
 				899F588F193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg in Resources */,
 				899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */,
 			);
@@ -264,7 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899F5871193C564900A2B9DA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899F587E193C683900A2B9DA /* ScalableTopViewController.m in Sources */,
-				899F5895193CAF7700A2B9DA /* ScaledViewController.m in Sources */,
+				893C5AB5193F0CA4001D5308 /* ScaledViewController.m in Sources */,
 				899F5889193C6BF200A2B9DA /* OtherTableViewCell.m in Sources */,
 				899F585E193C564800A2B9DA /* AppDelegate.m in Sources */,
 				899F588D193C7EF800A2B9DA /* HomeTableViewController.m in Sources */,
+				893C5AB4193F0CA4001D5308 /* ScalableTopViewController.m in Sources */,
 				899F585A193C564800A2B9DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				899F5873193C564900A2B9DA /* HaydayAnimationTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +289,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				899F5857193C564800A2B9DA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		899F586F193C564900A2B9DA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				899F5870193C564900A2B9DA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
