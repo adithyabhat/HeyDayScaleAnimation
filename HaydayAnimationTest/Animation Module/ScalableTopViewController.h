@@ -16,10 +16,15 @@
 @protocol ScalableTopViewDelegate <NSObject>
 
 @optional
+
 - (void)viewWillEnterFullScreen;
 - (void)viewDidEnterFullScreen;
 - (void)viewWillExitFullScreen;
 - (void)viewDidExitFullScreen;
+
+- (void)handleSwipeWithGestureRecognizer:(UISwipeGestureRecognizer *)swipeGesturerecognizer;
+- (void)handlePanWithGestureRecognizer:(UIPanGestureRecognizer *)panGesturerecognizer;
+- (void)handleLongPressWithGestureRecognizer:(UILongPressGestureRecognizer *)longPressGesturerecognizer;
 
 @end
 

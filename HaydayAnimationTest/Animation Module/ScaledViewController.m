@@ -89,11 +89,19 @@
     NSLog(@"viewWillExitFullScreen");
 }
 
-#pragma mark - Private methods
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)handleLongPressWithGestureRecognizer:(UILongPressGestureRecognizer *)longPressGesturerecognizer
 {
-    [(ScalableTopViewController *)self.parentViewController exitFullScreenMode];
+    NSLog(@"Long press");
+}
+
+- (void)handlePanWithGestureRecognizer:(UIPanGestureRecognizer *)panGesturerecognizer
+{
+    NSLog(@"Pan");
+}
+
+- (void)handleSwipeWithGestureRecognizer:(UISwipeGestureRecognizer *)swipeGesturerecognizer
+{
+    NSLog(@"swiped");
 }
 
 @end
