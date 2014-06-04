@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		899F584E193C564800A2B9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584D193C564800A2B9DA /* Foundation.framework */; };
+		899F5850193C564800A2B9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584F193C564800A2B9DA /* CoreGraphics.framework */; };
+		899F5852193C564800A2B9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5851193C564800A2B9DA /* UIKit.framework */; };
+		899F5858193C564800A2B9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899F5856193C564800A2B9DA /* InfoPlist.strings */; };
+		899F585A193C564800A2B9DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5859193C564800A2B9DA /* main.m */; };
+		899F585E193C564800A2B9DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F585D193C564800A2B9DA /* AppDelegate.m */; };
+		899F5860193C564900A2B9DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899F585F193C564900A2B9DA /* Images.xcassets */; };
+		899F5867193C564900A2B9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5866193C564900A2B9DA /* XCTest.framework */; };
+		899F5868193C564900A2B9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584D193C564800A2B9DA /* Foundation.framework */; };
+		899F5869193C564900A2B9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5851193C564800A2B9DA /* UIKit.framework */; };
+		899F5871193C564900A2B9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899F586F193C564900A2B9DA /* InfoPlist.strings */; };
+		899F5873193C564900A2B9DA /* HaydayAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */; };
+		899F587E193C683900A2B9DA /* ScalableTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F587D193C683900A2B9DA /* ScalableTopViewController.m */; };
+		899F5880193C686800A2B9DA /* sampleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 899F587F193C686800A2B9DA /* sampleImage.png */; };
+		899F5889193C6BF200A2B9DA /* OtherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */; };
+		899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */; };
+		899F588D193C7EF800A2B9DA /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F588C193C7EF800A2B9DA /* HomeTableViewController.m */; };
+		899F588F193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */; };
+		899F5895193CAF7700A2B9DA /* ScaledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5893193CAF7700A2B9DA /* ScaledViewController.m */; };
+		899F5896193CAF7700A2B9DA /* ScaledViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899F5894193CAF7700A2B9DA /* ScaledViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		899F586A193C564900A2B9DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 899F5842193C564800A2B9DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899F5849193C564800A2B9DA;
+			remoteInfo = HaydayAnimationTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		899F584A193C564800A2B9DA /* HeydayScaleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeydayScaleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		899F584D193C564800A2B9DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		899F584F193C564800A2B9DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		899F5851193C564800A2B9DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		899F5855193C564800A2B9DA /* HeydayScaleAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeydayScaleAnimation-Info.plist"; sourceTree = "<group>"; };
+		899F5857193C564800A2B9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		899F5859193C564800A2B9DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		899F585B193C564800A2B9DA /* HeydayScaleAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeydayScaleAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		899F585C193C564800A2B9DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		899F585D193C564800A2B9DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		899F585F193C564900A2B9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		899F5865193C564900A2B9DA /* HeydayScaleAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeydayScaleAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		899F5866193C564900A2B9DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		899F586E193C564900A2B9DA /* HeydayScaleAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeydayScaleAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		899F5870193C564900A2B9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaydayAnimationTestTests.m; sourceTree = "<group>"; };
+		899F587C193C683900A2B9DA /* ScalableTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalableTopViewController.h; sourceTree = "<group>"; };
+		899F587D193C683900A2B9DA /* ScalableTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScalableTopViewController.m; sourceTree = "<group>"; };
+		899F587F193C686800A2B9DA /* sampleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleImage.png; sourceTree = "<group>"; };
+		899F5886193C6BF200A2B9DA /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTableViewCell.h; sourceTree = "<group>"; };
+		899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherTableViewCell.m; sourceTree = "<group>"; };
+		899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		899F588B193C7EF800A2B9DA /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		899F588C193C7EF800A2B9DA /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "samsung-galaxy-w-7-inch.jpg"; sourceTree = "<group>"; };
+		899F5892193CAF7700A2B9DA /* ScaledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaledViewController.h; sourceTree = "<group>"; };
+		899F5893193CAF7700A2B9DA /* ScaledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaledViewController.m; sourceTree = "<group>"; };
+		899F5894193CAF7700A2B9DA /* ScaledViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaledViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		899F5847193C564800A2B9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F5850193C564800A2B9DA /* CoreGraphics.framework in Frameworks */,
+				899F5852193C564800A2B9DA /* UIKit.framework in Frameworks */,
+				899F584E193C564800A2B9DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899F5862193C564900A2B9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F5867193C564900A2B9DA /* XCTest.framework in Frameworks */,
+				899F5869193C564900A2B9DA /* UIKit.framework in Frameworks */,
+				899F5868193C564900A2B9DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		899F5841193C564800A2B9DA = {
+			isa = PBXGroup;
+			children = (
+				899F587F193C686800A2B9DA /* sampleImage.png */,
+				899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */,
+				899F5853193C564800A2B9DA /* HaydayAnimationTest */,
+				899F586C193C564900A2B9DA /* HaydayAnimationTestTests */,
+				899F584C193C564800A2B9DA /* Frameworks */,
+				899F584B193C564800A2B9DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		899F584B193C564800A2B9DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				899F584A193C564800A2B9DA /* HeydayScaleAnimation.app */,
+				899F5865193C564900A2B9DA /* HeydayScaleAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		899F584C193C564800A2B9DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				899F584D193C564800A2B9DA /* Foundation.framework */,
+				899F584F193C564800A2B9DA /* CoreGraphics.framework */,
+				899F5851193C564800A2B9DA /* UIKit.framework */,
+				899F5866193C564900A2B9DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		899F5853193C564800A2B9DA /* HaydayAnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				899F5886193C6BF200A2B9DA /* OtherTableViewCell.h */,
+				899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */,
+				899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */,
+				899F585C193C564800A2B9DA /* AppDelegate.h */,
+				899F585D193C564800A2B9DA /* AppDelegate.m */,
+				899F587C193C683900A2B9DA /* ScalableTopViewController.h */,
+				899F587D193C683900A2B9DA /* ScalableTopViewController.m */,
+				899F5892193CAF7700A2B9DA /* ScaledViewController.h */,
+				899F5893193CAF7700A2B9DA /* ScaledViewController.m */,
+				899F5894193CAF7700A2B9DA /* ScaledViewController.xib */,
+				899F588B193C7EF800A2B9DA /* HomeTableViewController.h */,
+				899F588C193C7EF800A2B9DA /* HomeTableViewController.m */,
+				899F585F193C564900A2B9DA /* Images.xcassets */,
+				899F5854193C564800A2B9DA /* Supporting Files */,
+			);
+			path = HaydayAnimationTest;
+			sourceTree = "<group>";
+		};
+		899F5854193C564800A2B9DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				899F5855193C564800A2B9DA /* HeydayScaleAnimation-Info.plist */,
+				899F5856193C564800A2B9DA /* InfoPlist.strings */,
+				899F5859193C564800A2B9DA /* main.m */,
+				899F585B193C564800A2B9DA /* HeydayScaleAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		899F586C193C564900A2B9DA /* HaydayAnimationTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				899F5872193C564900A2B9DA /* HaydayAnimationTestTests.m */,
+				899F586D193C564900A2B9DA /* Supporting Files */,
+			);
+			path = HaydayAnimationTestTests;
+			sourceTree = "<group>";
+		};
+		899F586D193C564900A2B9DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				899F586E193C564900A2B9DA /* HeydayScaleAnimationTests-Info.plist */,
+				899F586F193C564900A2B9DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		899F5849193C564800A2B9DA /* HeydayScaleAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899F5876193C564900A2B9DA /* Build configuration list for PBXNativeTarget "HeydayScaleAnimation" */;
+			buildPhases = (
+				899F5846193C564800A2B9DA /* Sources */,
+				899F5847193C564800A2B9DA /* Frameworks */,
+				899F5848193C564800A2B9DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeydayScaleAnimation;
+			productName = HaydayAnimationTest;
+			productReference = 899F584A193C564800A2B9DA /* HeydayScaleAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		899F5864193C564900A2B9DA /* HeydayScaleAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899F5879193C564900A2B9DA /* Build configuration list for PBXNativeTarget "HeydayScaleAnimationTests" */;
+			buildPhases = (
+				899F5861193C564900A2B9DA /* Sources */,
+				899F5862193C564900A2B9DA /* Frameworks */,
+				899F5863193C564900A2B9DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				899F586B193C564900A2B9DA /* PBXTargetDependency */,
+			);
+			name = HeydayScaleAnimationTests;
+			productName = HaydayAnimationTestTests;
+			productReference = 899F5865193C564900A2B9DA /* HeydayScaleAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		899F5842193C564800A2B9DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Robosoft Technologies";
+				TargetAttributes = {
+					899F5864193C564900A2B9DA = {
+						TestTargetID = 899F5849193C564800A2B9DA;
+					};
+				};
+			};
+			buildConfigurationList = 899F5845193C564800A2B9DA /* Build configuration list for PBXProject "HeydayScaleAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 899F5841193C564800A2B9DA;
+			productRefGroup = 899F584B193C564800A2B9DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				899F5849193C564800A2B9DA /* HeydayScaleAnimation */,
+				899F5864193C564900A2B9DA /* HeydayScaleAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		899F5848193C564800A2B9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F5858193C564800A2B9DA /* InfoPlist.strings in Resources */,
+				899F5860193C564900A2B9DA /* Images.xcassets in Resources */,
+				899F5880193C686800A2B9DA /* sampleImage.png in Resources */,
+				899F5896193CAF7700A2B9DA /* ScaledViewController.xib in Resources */,
+				899F588F193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg in Resources */,
+				899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899F5863193C564900A2B9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F5871193C564900A2B9DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		899F5846193C564800A2B9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F587E193C683900A2B9DA /* ScalableTopViewController.m in Sources */,
+				899F5895193CAF7700A2B9DA /* ScaledViewController.m in Sources */,
+				899F5889193C6BF200A2B9DA /* OtherTableViewCell.m in Sources */,
+				899F585E193C564800A2B9DA /* AppDelegate.m in Sources */,
+				899F588D193C7EF800A2B9DA /* HomeTableViewController.m in Sources */,
+				899F585A193C564800A2B9DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899F5861193C564900A2B9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899F5873193C564900A2B9DA /* HaydayAnimationTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		899F586B193C564900A2B9DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 899F5849193C564800A2B9DA /* HeydayScaleAnimation */;
+			targetProxy = 899F586A193C564900A2B9DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		899F5856193C564800A2B9DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				899F5857193C564800A2B9DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		899F586F193C564900A2B9DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				899F5870193C564900A2B9DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		899F5874193C564900A2B9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		899F5875193C564900A2B9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		899F5877193C564900A2B9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft Team (UB9A8EXRLS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaydayAnimationTest/HeydayScaleAnimation-Prefix.pch";
+				INFOPLIST_FILE = "HaydayAnimationTest/HeydayScaleAnimation-Info.plist";
+				PRODUCT_NAME = HeydayScaleAnimation;
+				PROVISIONING_PROFILE = "EF5D473A-BC6D-49B2-8C57-26185BDA4667";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		899F5878193C564900A2B9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robosoft Team (UB9A8EXRLS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaydayAnimationTest/HeydayScaleAnimation-Prefix.pch";
+				INFOPLIST_FILE = "HaydayAnimationTest/HeydayScaleAnimation-Info.plist";
+				PRODUCT_NAME = HeydayScaleAnimation;
+				PROVISIONING_PROFILE = "EF5D473A-BC6D-49B2-8C57-26185BDA4667";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		899F587A193C564900A2B9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaydayAnimationTest.app/HaydayAnimationTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaydayAnimationTest/HaydayAnimationTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HaydayAnimationTestTests/HeydayScaleAnimationTests-Info.plist";
+				PRODUCT_NAME = HeydayScaleAnimationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		899F587B193C564900A2B9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HaydayAnimationTest.app/HaydayAnimationTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HaydayAnimationTest/HaydayAnimationTest-Prefix.pch";
+				INFOPLIST_FILE = "HaydayAnimationTestTests/HeydayScaleAnimationTests-Info.plist";
+				PRODUCT_NAME = HeydayScaleAnimationTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		899F5845193C564800A2B9DA /* Build configuration list for PBXProject "HeydayScaleAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899F5874193C564900A2B9DA /* Debug */,
+				899F5875193C564900A2B9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899F5876193C564900A2B9DA /* Build configuration list for PBXNativeTarget "HeydayScaleAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899F5877193C564900A2B9DA /* Debug */,
+				899F5878193C564900A2B9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899F5879193C564900A2B9DA /* Build configuration list for PBXNativeTarget "HeydayScaleAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899F587A193C564900A2B9DA /* Debug */,
+				899F587B193C564900A2B9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 899F5842193C564800A2B9DA /* Project object */;
+}
