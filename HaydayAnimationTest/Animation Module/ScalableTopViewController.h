@@ -13,6 +13,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ScalableTopViewDelegate <NSObject>
+
+@optional
+- (void)viewWillEnterFullScreen;
+- (void)viewDidEnterFullScreen;
+- (void)viewWillExitFullScreen;
+- (void)viewDidExitFullScreen;
+
+@end
+
 @interface ScalableTopViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;

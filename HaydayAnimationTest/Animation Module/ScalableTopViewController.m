@@ -7,6 +7,7 @@
 
 #import "ScalableTopViewController.h"
 #import "ScaledViewController.h"
+#import <objc/message.h>
 
 static CGFloat SSHeaderViewIntialHeight = 200.0f;
 static CGFloat SSPartialToFullscreenAnimationDuration = 0.6f;
@@ -72,13 +73,25 @@ BOOL isScreen4Inch()
     self.tableView.bounces = YES;
     self.tableView.userInteractionEnabled = !(scalableController.view.userInteractionEnabled = NO);
     
+    [self callDelegateWithMessage:@"viewWillExitFullScreen"];
     [UIView animateWithDuration:SSFullScreenToPartialAnimationDuration
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -SSHeaderViewIntialHeight)];
                      }
-                     completion:NULL];
+                     completion:^(BOOL finished) {
+                         [self callDelegateWithMessage:@"viewDidExitFullScreen"];
+                     }];
+}
+
+- (void)callDelegateWithMessage:(NSString *)messageString
+{
+    SEL selector = NSSelectorFromString(messageString);
+    if ([scalableController respondsToSelector:selector])
+    {
+        objc_msgSend(scalableController, selector, NULL);
+    }
 }
 
 #pragma mark - Tableview datasource and delegate methods
@@ -113,6 +126,7 @@ BOOL isScreen4Inch()
         self.tableView.bounces = NO;
         self.tableView.userInteractionEnabled = !(scalableController.view.userInteractionEnabled = YES);
         
+        [self callDelegateWithMessage:@"viewWillEnterFullScreen"];
         [UIView animateWithDuration:SSPartialToFullscreenAnimationDuration
                               delay:0.0f
                             options:UIViewAnimationOptionCurveEaseInOut
@@ -120,7 +134,9 @@ BOOL isScreen4Inch()
                              [self.tableView setContentOffset:CGPointMake(scrollView.contentOffset.x,
                                                                           -CGRectGetHeight(self.view.bounds))];
                          }
-                         completion:NULL];
+                         completion:^(BOOL finished) {
+                             [self callDelegateWithMessage:@"viewDidEnterFullScreen"];
+                         }];
         
         *targetContentOffset = CGPointMake(self.tableView.contentOffset.x, -CGRectGetHeight(self.view.bounds));
     }

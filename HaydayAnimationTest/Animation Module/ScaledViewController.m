@@ -8,7 +8,7 @@
 #import "ScaledViewController.h"
 #import "ScalableTopViewController.h"
 
-@interface ScaledViewController ()
+@interface ScaledViewController () <ScalableTopViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *tempImageView;
 
@@ -19,15 +19,6 @@
     CGFloat defaultHeight;
 }
 
-- (id)initWithInitialDefaultViewHeight:(CGFloat)height
-{
-    if ([super init])
-    {
-        defaultHeight = height;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,6 +27,17 @@
     CGRect viewFrame = self.view.frame;
     viewFrame.size.height = defaultHeight;
     self.view.frame = viewFrame;
+}
+
+#pragma mark - Public methods
+
+- (id)initWithInitialDefaultViewHeight:(CGFloat)height
+{
+    if ([super init])
+    {
+        defaultHeight = height;
+    }
+    return self;
 }
 
 - (void)updateViewFrameForScrollContentOffsetY:(CGFloat)value
@@ -74,6 +76,20 @@
                          [self updateViewFrameForScrollContentOffsetY:value];
                      }];
 }
+
+#pragma mark - Delegate methods
+
+- (void)viewWillEnterFullScreen
+{
+    NSLog(@"viewWillEnterFullScreen");
+}
+
+- (void)viewWillExitFullScreen
+{
+    NSLog(@"viewWillExitFullScreen");
+}
+
+#pragma mark - Private methods
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
