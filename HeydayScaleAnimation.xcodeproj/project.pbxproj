@@ -20,7 +20,6 @@
 		899F5867193C564900A2B9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5866193C564900A2B9DA /* XCTest.framework */; };
 		899F5868193C564900A2B9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F584D193C564800A2B9DA /* Foundation.framework */; };
 		899F5869193C564900A2B9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899F5851193C564800A2B9DA /* UIKit.framework */; };
-		899F5880193C686800A2B9DA /* sampleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 899F587F193C686800A2B9DA /* sampleImage.png */; };
 		899F5889193C6BF200A2B9DA /* OtherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */; };
 		899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */; };
 		899F588D193C7EF800A2B9DA /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899F588C193C7EF800A2B9DA /* HomeTableViewController.m */; };
@@ -56,7 +55,6 @@
 		899F585F193C564900A2B9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		899F5865193C564900A2B9DA /* HeydayScaleAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeydayScaleAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		899F5866193C564900A2B9DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		899F587F193C686800A2B9DA /* sampleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleImage.png; sourceTree = "<group>"; };
 		899F5886193C6BF200A2B9DA /* OtherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTableViewCell.h; sourceTree = "<group>"; };
 		899F5887193C6BF200A2B9DA /* OtherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherTableViewCell.m; sourceTree = "<group>"; };
 		899F5888193C6BF200A2B9DA /* OtherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		899F5841193C564800A2B9DA = {
 			isa = PBXGroup;
 			children = (
-				899F587F193C686800A2B9DA /* sampleImage.png */,
 				899F588E193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg */,
 				899F5853193C564800A2B9DA /* HaydayAnimationTest */,
 				899F584C193C564800A2B9DA /* Frameworks */,
@@ -238,7 +235,6 @@
 				893C5AB6193F0CA4001D5308 /* ScaledViewController.xib in Resources */,
 				899F5858193C564800A2B9DA /* InfoPlist.strings in Resources */,
 				899F5860193C564900A2B9DA /* Images.xcassets in Resources */,
-				899F5880193C686800A2B9DA /* sampleImage.png in Resources */,
 				899F588F193C832A00A2B9DA /* samsung-galaxy-w-7-inch.jpg in Resources */,
 				899F588A193C6BF200A2B9DA /* OtherTableViewCell.xib in Resources */,
 			);

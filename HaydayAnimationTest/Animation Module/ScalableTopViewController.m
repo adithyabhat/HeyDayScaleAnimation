@@ -190,18 +190,18 @@ BOOL isScreen4Inch()
         fullScreenMode = YES;
         
         [self callDelegateWithMessage:@"viewWillEnterFullScreen" withObject:NULL];
+        
+        *targetContentOffset = CGPointMake(scrollView.contentOffset.x, -CGRectGetHeight(self.view.bounds));
+
         [UIView animateWithDuration:SSPartialToFullscreenAnimationDuration
                               delay:0.0f
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
-                             [self.tableView setContentOffset:CGPointMake(scrollView.contentOffset.x,
-                                                                          -CGRectGetHeight(self.view.bounds))];
+                             [self.tableView setContentOffset:*targetContentOffset];
                          }
                          completion:^(BOOL finished) {
                              [self callDelegateWithMessage:@"viewDidEnterFullScreen" withObject:NULL];
                          }];
-        
-        *targetContentOffset = CGPointMake(self.tableView.contentOffset.x, -CGRectGetHeight(self.view.bounds));
     }
 }
 
