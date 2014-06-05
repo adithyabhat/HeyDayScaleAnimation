@@ -32,6 +32,4 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
-- (void)exitFullScreenMode;
-
 @end

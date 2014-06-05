@@ -22,6 +22,7 @@ static CGFloat SSPullToFullscreeThresholdValue_3_5_Screen = 250.0f;
 @implementation ScalableTopViewController
 {
     ScaledViewController *scalableController;
+    BOOL fullScreenMode;
 }
 
 #pragma mark - Table view data source
@@ -35,6 +36,25 @@ static CGFloat SSPullToFullscreeThresholdValue_3_5_Screen = 250.0f;
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
 
+#pragma mark - Public methods
+
+- (void)exitFullScreenMode
+{
+    self.tableView.scrollEnabled = YES;
+    fullScreenMode = NO;
+    
+    [self callDelegateWithMessage:@"viewWillExitFullScreen" withObject:NULL];
+    [UIView animateWithDuration:SSFullScreenToPartialAnimationDuration
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -SSHeaderViewIntialHeight)];
+                     }
+                     completion:^(BOOL finished) {
+                         [self callDelegateWithMessage:@"viewDidExitFullScreen" withObject:NULL];
+                     }];
+}
+
 #pragma mark - Private helper methods
 
 BOOL isScreen4Inch()
@@ -45,11 +65,6 @@ BOOL isScreen4Inch()
 
 - (void)addGestureRecognizers
 {
-    //Used when in full screen more. Swiping up will exit the full screen.
-    UISwipeGestureRecognizer *upSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(exitFullScreenMode)];
-    upSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
-    self.view.gestureRecognizers = @[upSwipeGestureRecognizer];
-    
     //Gestures on tableview
     UISwipeGestureRecognizer *leftSwipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     leftSwipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
@@ -106,38 +121,38 @@ BOOL isScreen4Inch()
     }
 }
 
-#pragma mark - Gesture recognizers
-
-- (void)exitFullScreenMode
+- (BOOL)isExitFullScreenGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 {
-    self.tableView.scrollEnabled = YES;
-    
-    [self callDelegateWithMessage:@"viewWillExitFullScreen" withObject:NULL];
-    [UIView animateWithDuration:SSFullScreenToPartialAnimationDuration
-                          delay:0.0f
-                        options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         [self.tableView setContentOffset:CGPointMake(self.tableView.contentOffset.x, -SSHeaderViewIntialHeight)];
-                     }
-                     completion:^(BOOL finished) {
-                         [self callDelegateWithMessage:@"viewDidExitFullScreen" withObject:NULL];
-                     }];
+    BOOL returnValue = NO;
+    if (fullScreenMode && [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]])
+    {
+        CGPoint velocity = [(UIPanGestureRecognizer *)gestureRecognizer velocityInView:scalableController.view];
+        returnValue = (fabs(velocity.y) > fabs(velocity.x)) && (velocity.y < 0);
+    }
+    return returnValue;
 }
 
-- (BOOL)shouldPassToScalableViewGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+- (BOOL)canPassToScalableViewGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 {
     return [scalableController.view pointInside:[gestureRecognizer locationInView:scalableController.view] withEvent:nil];
 }
 
+#pragma mark - Gesture recognizers
+
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizer
 {
     static NSDictionary *delegateMethodNameForGestureRecognizer;
-    delegateMethodNameForGestureRecognizer = @{@"UISwipeGestureRecognizer" : @"handleSwipeWithGestureRecognizer:",
-                                               @"UIPanGestureRecognizer" : @"handlePanWithGestureRecognizer:",
-                                               @"UILongPressGestureRecognizer" : @"handleLongPressWithGestureRecognizer:"};
-    
-    if ([self shouldPassToScalableViewGestureRecognizer:gestureRecognizer])
+    if (!delegateMethodNameForGestureRecognizer)
     {
+        delegateMethodNameForGestureRecognizer = @{@"UISwipeGestureRecognizer" : @"handleSwipeWithGestureRecognizer:",
+                                                   @"UIPanGestureRecognizer" : @"handlePanWithGestureRecognizer:",
+                                                   @"UILongPressGestureRecognizer" : @"handleLongPressWithGestureRecognizer:"};
+    }
+    
+    if ([self canPassToScalableViewGestureRecognizer:gestureRecognizer])
+    {
+        [self isExitFullScreenGestureRecognizer:gestureRecognizer] ?
+        [self exitFullScreenMode] :
         [self callDelegateWithMessage:delegateMethodNameForGestureRecognizer[NSStringFromClass([gestureRecognizer class])]
                            withObject:gestureRecognizer];
     }
@@ -172,6 +187,7 @@ BOOL isScreen4Inch()
     if (self.tableView.contentOffset.y < -(isScreen4Inch() ? SSPullToFullscreeThresholdValue_4_Screen : SSPullToFullscreeThresholdValue_3_5_Screen))
     {
         self.tableView.scrollEnabled = NO;
+        fullScreenMode = YES;
         
         [self callDelegateWithMessage:@"viewWillEnterFullScreen" withObject:NULL];
         [UIView animateWithDuration:SSPartialToFullscreenAnimationDuration
